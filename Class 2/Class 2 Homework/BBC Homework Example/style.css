@@ -1,0 +1,284 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  
+  /* Navbar */
+  header{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background: black;
+    font-size: .9rem;
+    font-weight: 600;
+    
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0 .5rem;
+    height: 40px;
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .logo {
+    height: 85%;
+    padding-right: 8px;
+    transform: translateX(-.25rem);
+    border-right: 1px solid gray;
+    
+  }
+  
+  .signin {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    max-width: 170px;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .cir {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    margin: auto 0 auto 10px;
+  }
+  
+  .login {
+    display: flex;
+    color: black;
+    transform: translate(-130%, 42%);
+    margin: 0 auto;
+  }
+  
+  .signInText {
+    display: flex;
+    align-items: center;
+    padding-right: 85px;
+    
+  }
+  
+  .navbar {
+    display: flex; 
+    height: 100%;
+  }
+  
+  .nav-link {
+    display: flex; 
+    list-style-type: none;
+    border-left: 1px solid gray;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 20px;
+  }
+  
+  .nav-link:hover {
+    background: white; 
+    color: black;
+    transition: .5s;
+  }
+  
+  .nav-link:last-child {
+    padding-right: 60px;
+    border-right: 1px solid gray;
+  }
+  
+  input, textarea {
+    height: 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 10px;
+    
+  }
+  
+  .wrapper {
+    position: relative;
+    height: auto;
+    width: auto;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    
+  }
+  
+  /* Hero */
+  
+  .headerHero {
+    padding: 2rem 0 1rem 0;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .heroDate {
+    position: absolute;
+    font-size: 1.3rem;
+    color: #333;
+    top: 2.5%;
+    left: 85%;
+    z-index: 3;
+  }
+  
+  .heroLeft img {
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+  }
+  
+  .heroRight img {
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+  }
+  
+  .hero {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    gap: 5px;
+  }
+  
+  .heroLeft {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+  }
+  
+  .heroRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    gap: 0 5px;
+  }
+  
+  .textOverlayLeft {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 5px;
+    left: -50%;
+    right: 0;        
+    /* text-align: center; */
+    top: 74%;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    width: 48%; 
+  
+  }
+  
+  .textOverlay {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 5px;
+    /* left: 50%; */
+    right: 0;        
+    /* text-align: center; */
+    /* top: 70%; */
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    width: 23%; 
+  }
+  
+  .right1 {
+    left: 25%;
+    top: 32%;
+  }
+  
+  .right2 {
+    left: 75.5%;
+    top: 32%;
+  }
+  
+  .right3 {
+    left: 25%;
+    top: 82%;
+  }
+  
+  .right4 {
+    left: 75.5%;
+    top: 82%;
+  }
+  
+  .storyHeader {
+    padding-bottom: 10px;
+  }
+  
+  .storyOverview {
+    padding-bottom: 10px;
+  }
+  
+  .storyType {
+    border-left: 3px solid red;
+    padding-left: 10px;
+  }
+  
+  /* News */
+  
+  .articleHeader {
+    padding-left: 10px;
+    margin: 3rem 0 1rem 0;
+    font-size: 1.3rem;
+    color: #333;
+    border-left: 3px solid red;
+    
+  }
+  
+  .artWrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    gap: 10px;
+  
+  }
+  
+  .artWrapper img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+  
+  .artLink {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .artHeader {
+    margin-bottom: 10px;
+  }
+  
+  .artText {
+    margin-bottom: 10px;
+  }
+  
+  .artType {
+    border-left: 3px solid red;
+    padding-left: 10px;
+  }
+  
+  

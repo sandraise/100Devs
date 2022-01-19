@@ -1,3 +1,4 @@
+# CLASS 1
 Here are the slides if you would like to follow along live: https://slides.com/d/yLDd28I/live 
 
 And here is the regular deck: https://slides.com/leonnoel/100devs2-html-the-basics 

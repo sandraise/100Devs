@@ -1,0 +1,143 @@
+ul {
+  list-style-type: none;
+  /* remove bullet points */
+  margin: 0;
+  /* reset browser defaults */
+  padding: 0;
+  /* reset browser defaults */
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #2666F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+header {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background: #fff;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+#nav {
+  list-style: none;
+  display:inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align:justify;
+  background-color: rgb(255, 255, 255);
+  height:38px;
+}
+
+#nav {
+  list-style: none;
+  display:inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align:justify;
+  background-color: rgb(255, 255, 255);
+  height:38px;
+}
+
+.navbar {
+  /* this is for the whole navbar */
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+}
+
+.navbar li {
+  /* this is for each list item containing text */
+  flex: 1;
+  list-style-type: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.navbar a {
+  /* this is for the actual link text */
+  color: #2666F2;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  height: 85%;
+  padding-right: 0px;
+  transform: translateX(-.25rem);
+  
+}
+
+.hero {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+
+.container {
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 300px;
+  margin: 0 auto;
+  width: 450px;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.img {
+  float: right;
+  margin: px;
+}
+
+p, span {
+  color: #333;
+}
