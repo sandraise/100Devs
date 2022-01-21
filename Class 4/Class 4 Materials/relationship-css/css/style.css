@@ -1,0 +1,33 @@
+h1 {
+    color:tomato;
+}
+
+section h2 {
+    color:yellowgreen;
+}
+
+section > article {
+    color: brown;
+}
+
+section article h2 {
+    color:cornflowerblue;
+}
+
+article > h2 {
+    color:darkcyan;
+}
+
+#zebra {
+    background: dimgrey;
+    color: white;
+}
+
+.bob {
+    background: gold;
+}
+
+p + p {
+    text-decoration: wavy;
+    color:red !important;
+}
