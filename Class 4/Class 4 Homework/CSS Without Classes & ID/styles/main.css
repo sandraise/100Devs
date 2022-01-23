@@ -1,3 +1,5 @@
+/* || GENERAL STYLES */
+
 body {
     color: rgb(255, 255, 255);
     width: auto;
@@ -6,6 +8,8 @@ body {
     margin: 35px;
     padding: 0px 0px 30px 0px;
 }
+
+/* || TYPOGRAPHY */
 
 h1 {
     font-family: "PT Serif", serif;
@@ -37,6 +41,8 @@ a {
 
 }
 
+/* || NAVIGATION */
+
 ul {
     text-align: center;
 
@@ -49,12 +55,15 @@ nav ul li {
     display: inline-block;
     border-right: 2px solid gray;
     padding: 0px 5px 0px 0px;
+    line-height: 1em;
 
 }
 
 ul li:last-of-type {
     border-right: none;
 }
+
+/* || IMAGES */
 
 img {
     height: 350px;
