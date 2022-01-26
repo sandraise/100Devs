@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  background: rgb(209, 200, 193);
+}
+
+header,
+footer {
+  height: 100px;
+  border: 2px solid black;
+  width: 100%;
+  clear: both;
+}
+
+#section-one {
+  height: 400px;
+  border: 2px solid black;
+  width: 20%;
+  float: left;
+
+}
+
+#section-two {
+  height: 400px;
+  border: 2px solid black;
+  width: 40%;
+  float: left;
+
+}
+
+#section-three {
+  height: 400px;
+  border: 2px solid black;
+  width: 20%;
+  float: left;
+
+}
+
+#section-four {
+  height: 400px;
+  border: 2px solid black;
+  width: 20%;
+  float: right;
+
+}
