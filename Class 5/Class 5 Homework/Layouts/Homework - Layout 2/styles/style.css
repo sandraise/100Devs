@@ -9,25 +9,33 @@ footer {
   border: 2px solid black;
   width: 100%;
   clear: both;
+  text-align: center;
+  background: palegoldenrod;
 }
 
-#first {
+section {
   height: 150px;
   border: 2px solid black;
   width: 100%;
   float: left;
+  text-align: center;
+  background: rgb(240, 196, 87);
 }
 
-#second {
+article {
   height: 250px;
   border: 2px solid black;
   width: 40%;
   float: left;
+  text-align: center;
+  background: rgb(180, 159, 221);
 }
 
-#third {
+aside {
   height: 250px;
   border: 2px solid black;
   width: 60%;
   float: right;
+  text-align: center;
+  background: rgb(184, 206, 139);
 }

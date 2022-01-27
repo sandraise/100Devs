@@ -8,6 +8,8 @@ footer {
   height: 100px;
   border: 2px solid black;
   clear: both;
+  background: salmon;
+  text-align: center;
 }
 
 section {
@@ -15,4 +17,6 @@ section {
   width: 33.333%;
   border: 2px solid black;
   float: left;
+  background: sandybrown;
+  text-align: center;
 }
