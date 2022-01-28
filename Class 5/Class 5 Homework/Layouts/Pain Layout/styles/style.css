@@ -20,3 +20,18 @@ section {
   background: sandybrown;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    color: gray;
+  }
+  section {
+    background: cadetblue;
+    font-size: 2rem;
+  }
+  header,
+  footer {
+    background: darkseagreen;
+    font-size: 3rem;
+  }
+}
