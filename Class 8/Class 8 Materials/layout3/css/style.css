@@ -1,6 +1,6 @@
 /* Box Model Hack */
 * {
-  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
@@ -27,22 +27,48 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header,
-footer {
-  height: 100px;
-  border: 2px solid black;
-}
-section {
-  height: 200px;
-  border: 2px solid black;
-  flex: 1;
+
+/* TOP SECTION */
+header {
+  height: 55px;
+  background: black;
+  color: white;
 }
 
-main,
-.bottom {
-  display: flex;
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
 }
 
+nav form input {
+  width: 100%;
+}
+
+header nav ul {
+  width: 50%;
+  list-style-type: none;
+}
+
+main > section {
+  float: left;
+  width: 50%;
+  height: 500px;
+}
+
+main > section + section > section {
+  width: 50%;
+  height: 250px;
+  float: left;
+  border: 2px solid black;
+}
+/* BOTTOM SECTION */
+
+main + section > section {
+  float: left;
+  width: 33.33%;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

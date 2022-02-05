@@ -1,0 +1,17 @@
+main, .articles {
+  display:flex;
+}
+
+section {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+article {
+  height: 200px;
+  width: 200px;
+  border: 2px solid red;
+  flex:2;
+}
