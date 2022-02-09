@@ -1,0 +1,160 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+h1 {
+  color: white;
+  font-weight: 200;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* HEADER */
+
+header {
+  height: 55px;
+  background: black;
+  color: white;
+}
+
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+
+nav form input {
+  width: 100%;
+}
+
+header nav ul {
+  width: 50%;
+  list-style-type: none;
+}
+
+/* TOP SECTION */
+
+main h1 {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  width: 50%;
+  font-size: 55px;
+}
+
+main p {
+  position: absolute;
+  top: 550px;
+  left: 30px;
+  width: 50%;
+  font-size: 20px;
+  color: white;
+}
+
+main h2 {
+  padding: 0 0 10px 10px;
+  width: 20%;
+  color: rgb(99, 99, 99);
+}
+
+main h3 {
+  width: 10%;
+  float: right;
+}
+
+main span {
+  border-left: 4px solid rgb(255, 1, 1);
+  display: block;
+  line-height: 2px;
+}
+
+/* main span:nth-child(3) {
+  border-left: 4px solid rgb(1, 153, 255);
+}
+
+main span:nth-child(2) {
+  border-left: 4px solid rgb(111, 0, 255);
+  display: block;
+} */
+
+main > section {
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding: 0 10px 0 10px;
+}
+
+main > section img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+main > section + section > section {
+  width: 50%;
+  height: 250px;
+  float: left;
+  padding: 0 10px 30px 0;
+}
+
+main > section + section > section > h3 {
+  float: left;
+  width: 100%;
+  margin: 0 0 0 20px;
+}
+
+/* BOTTOM SECTION */
+
+main + section > section {
+  margin-top: 100px;
+  float: left;
+  width: 33.33%;
+  padding: 0 10px 0 10px;
+}
+
+main + section > h2 {
+  font-size: 30px;
+  border-left: 5px solid red;
+  margin: 100px 0 0 0;
+}
+
+main + section > section img {
+  width: 500px;
+  height: 300px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
