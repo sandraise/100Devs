@@ -1,0 +1,344 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --grey: rgb(241, 238, 238);
+}
+
+body {
+  font-family: "Cinzel", serif;
+  /* font-family: 'Fira Sans', sans-serif; */
+}
+
+/* HEADER */
+.salon-logo {
+  font-family: "Petemoss", cursive;
+  font-size: 3rem;
+  padding-left: 30px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  vertical-align: middle;
+  height: auto;
+}
+
+.logo-nav {
+  margin-right: auto;
+  height: 40px;
+  margin-left: 30px;
+}
+
+.nav-area * {
+  display: inline;
+  padding: 20px;
+  margin: auto 0;
+}
+
+.nav-area {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.nav-image {
+  width: 20px;
+}
+
+.btn {
+  height: 30px;
+  width: 180px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--black);
+  text-align: center;
+  background: var(--white);
+}
+
+.primary {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--white);
+  text-align: center;
+  background: var(--black);
+}
+
+.main-header .btn.nav {
+  padding-right: 30px;
+}
+
+/* MAIN SECTION */
+
+.main-img {
+  width: 100%;
+  position: relative;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 680px;
+  right: 50px;
+  text-align: left;
+  width: 35%;
+}
+
+.title-overlay h1 {
+  font-size: 6.5rem;
+  color: var(--white);
+}
+
+.title-overlay h2 {
+  font-size: 1.3rem;
+  color: var(--white);
+  margin: 20px 0;
+}
+
+.opening-times {
+  position: absolute;
+  top: 450px;
+  right: 1270px;
+  text-align: left;
+  width: 35%;
+  transform: rotate(-90deg);
+}
+
+.opening-times h3 {
+  color: white;
+}
+
+.new-comers {
+  background: var(--black);
+  position: absolute;
+  top: 1050px;
+  right: 200px;
+  height: 280px;
+  text-align: left;
+  width: 20%;
+}
+
+.new-comers h3:first-child {
+  color: white;
+  font-size: 1.3rem;
+  border-left: 4px solid white;
+  margin: 30px 0;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.new-comers h3:nth-child(2) {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+
+.new-comers span {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.new-comers .btn.nav {
+  margin-left: 20px;
+}
+
+.arrows {
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  height: 50px;
+  text-align: right;
+  width: 20%;
+  color: white;
+}
+
+.arrows span {
+  padding-right: 50px;
+  font-size: 1.5rem;
+}
+
+/* SERVICES PANELS */
+.services {
+  height: 320px;
+  margin: 180px 0 0 0;
+  padding: 0 150px;
+}
+
+.panel1,
+.panel2,
+.panel3 {
+  width: 33.3333%;
+  float: left;
+  padding: 25px;
+}
+
+.panel-image {
+  display: inline-block;
+  margin: 0 150px;
+  width: 70px;
+}
+.panel-title {
+  font-weight: 600;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.panel-description {
+  text-align: center;
+  line-height: 30px;
+}
+
+/* MAKE YOUR MOMENTUM */
+.make-your-own-momentum {
+  clear: both;
+  margin: 50px;
+  height: 550px;
+  background: var(--grey);
+}
+
+.text-area,
+.sub-image {
+  float: left;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.text-area {
+  padding-left: 180px;
+}
+
+.subheading {
+  font-size: 3.2rem;
+  line-height: 60px;
+}
+
+.sub-paragraph {
+  font-size: 1.2rem;
+  line-height: 30px;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+.sub-img {
+  width: 70%;
+}
+
+.text-area .btn.primary {
+  margin-top: 20px;
+}
+
+/* STAFF */
+
+.staff {
+  margin: 50px;
+  height: 550px;
+}
+
+.staff1,
+.staff2,
+.staff3 {
+  width: 33.3333%;
+  float: left;
+
+}
+
+
+.caption {
+  width: 200px;
+  background: var(--black);
+}
+
+.staff-name,
+.staff-role {
+  color: white;
+  text-align: center;
+}
+
+.staff-name {
+  font-weight: 600;
+}
+
+/* .staff-img {
+height: 70%;
+width: auto;
+
+} */
+
+
+/* DISCOUNT */
+
+.discount-section {
+
+  height: 500px;
+}
+
+.discount-img {
+  width: 100%;
+
+}
+
+
+
+/* LOOKBOOK */
+.flex-box {
+  margin-top: 500px;
+background: yellow;
+padding: 10px;
+margin: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+
+}
+
+.look {
+  background: grey;
+  flex: 1;
+}
+
+.look1,
+.look2,
+.look3,
+.look4,
+.look5,
+.look6 {
+  width: 20%;
+  
+}

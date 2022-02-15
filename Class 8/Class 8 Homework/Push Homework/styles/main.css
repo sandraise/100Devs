@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+:root {
+  --blue: rgb(21, 25, 37);
+  --buttonblue: rgb(42, 46, 59);
+  --grey: rgba(214, 216, 228, 0.3);
+  --buttonwhite: rgb(218, 220, 230);
+  --lightgrey: rgba(245, 245, 248, 0.5);
+  --buttongrey: rgba(45, 49, 61);
+  --white: rgba(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: var(--lightgrey);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background: var(--blue);
+  vertical-align: middle;
+}
+
+.logo-nav {
+  margin-right: auto;
+  height: 40px;
+  margin-left: 30px;
+}
+
+.nav-area * {
+  display: inline;
+  padding: 20px;
+  margin: auto 0;
+}
+
+.nav-area {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--grey);
+  transition: all 0.4s ease 0s;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.nav-links:hover {
+  color: var(--buttonwhite);
+}
+
+.btn {
+  height: 30px;
+  width: 180px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.nav-button {
+  display: inline-block;
+  vertical-align: middle;
+  background: rgb(42, 46, 59);
+}
+
+.btn.nav-button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.primary {
+  display: inline-block;
+  vertical-align: middle;
+  background: var(--blue);
+}
+
+.btn.primary,
+.btn.nav-button {
+  margin: 50px;
+}
+
+.btn.primary a,
+span {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.logo-image {
+  width: 100px;
+}
+
+/* TOP SECTION */
+
+main {
+  height: 550px;
+  background: var(--blue);
+  margin: 0 0 0 0;
+}
+
+.first-text {
+  float: left;
+  width: 50%;
+  margin-top: 120px;
+}
+
+.first-image {
+  float: right;
+  width: 50%;
+
+  margin-top: 50px;
+}
+
+.white-bg {
+  font-family: arial;
+  font-size: 24px;
+  margin: 50px;
+  width: 600px;
+  height: 400px;
+  background: var(--white);
+  position: relative;
+  border-radius: 10px;
+}
+
+.grey-bg {
+  width: 550px;
+  height: 350px;
+  background: rgba(214, 216, 228, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-here {
+  width: 180px;
+  height: 120px;
+  background: var(--buttongrey);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-here span {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  color: var(--buttonwhite);
+  font-weight: 300;
+  font-size: 4.5rem;
+  margin: 0 0 20px 50px;
+  width: 70%;
+  line-height: 60px;
+  padding-right: 57px;
+}
+
+.paragraph-text {
+  color: var(--buttonwhite);
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 40px;
+  margin: 0 0 0 50px;
+  padding-right: 40px;
+  width: 80%;
+}
+
+.logos {
+  clear: both;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo-image {
+  padding: 10px;
+}
+
+.split {
+  height: 600px;
+  margin: 100px 0 0 0;
+}
+
+.about-us-text-1,
+.services,
+.panel-image,
+.solutions-based,
+.how-it-works,
+.our-approach {
+  width: 50%;
+  float: left;
+}
+
+.digital-socialmedia,
+.brand-marketing,
+.media-buying,
+.graphic-webdesign {
+  float: right;
+  width: 50%;
+  padding: 50px;
+}
+
+.panel-subtitle {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.panel-description {
+  text-align: center;
+}
+
+.panel-image-space {
+  height: 150px;
+  background: rgb(206, 206, 206);
+  margin: 0;
+}
+
+.panel-section {
+  background: white;
+  margin: 0;
+}
+
+.tagline {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 60px 0 50px;
+  font-size: 1.7rem;
+  color: rgb(185, 185, 185);
+  margin-top: 60px;
+}
+
+.panel-title {
+  font-size: 3.3rem;
+  font-weight: 300;
+  padding: 0 150px 0 50px;
+  width: 80%;
+}
+
+.panel-title ~ p {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-left: 50px;
+  width: 90%;
+  white-space: pre-line;
+  line-height: 30px;
+}
+
+.image-space {
+  width: 600px;
+  height: 500px;
+  background: rgba(214, 216, 228, 1);
+  margin: 0 10px 0 50px;
+}
+
+.why-us {
+  height: 440px;
+  background: var(--blue);
+}
+.why-us > section {
+  float: left;
+  width: 30%;
+  background: var(--white);
+  border-radius: 20px;
+  height: 200px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.why-us-title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+.why-us-description {
+  font-size: 2rem;
+  margin: 10px;
+  line-height: 30px;;
+}
+
+.why-us section img {
+  width: 50px;
+}
