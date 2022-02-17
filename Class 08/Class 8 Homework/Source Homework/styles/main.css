@@ -115,29 +115,6 @@ main {
   width: 100%;
 }
 
-/* input[type="text"] {
-  width: 350px;
-  height: 40px;
-  padding-right: 50px;
-  padding-left: 10px;
-  background: rgb(218, 227, 236);
-  border: none;
-  font-size: 1.5rem;
-  color: rgba(37, 53, 71, 0.5);
-}
-
-input[type="submit"] {
-  margin-left: -50px;
-  height: 40px;
-  width: 100px;
-  background: rgba(37, 53, 71, 1);
-  color: rgb(255, 255, 255);
-  border: 0;
-  font-size: 1.8rem;
-  border: none;
-  padding: 5px 0 0 0;
-} */
-
 form {
   position: relative;
 }

@@ -5,38 +5,347 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
+/* GLOBAL */
+html {
+  font-size: 62.5%;
+}
 body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  vertical-align: middle;
+  height: auto;
+  padding: 20px;
+}
+.nav-area {
+  margin-right: 40px;
+}
+
+.nav-area * {
+  display: inline;
+  margin: auto 0;
+  font-size: 2rem;
+  font-weight: 400; 
+}
+
+.nav-area a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+  padding-right: 25px;
+  transition: all 0.4s ease;
+}
+
+.nav-area a:hover {
+  color: orange;
+}
+
+.header-img {
+  height: 30px;
+  padding-right: 50px;
+}
+
+.bg-img {
+  background-image: url("../assets/images/pexels-anna-guerrero-1765005.jpg");
+  min-height: 780px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 20px;
+  right: 100%;
+  top: 48%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 50%;
+  padding-right: 100px;
+}
+/* MAIN */
+
+.main-heading {
+  font-family: "Questrial", sans-serif;
+  font-size: 6rem;
+}
+
+.btn {
+  background: rgba(255, 252, 95, 0.5);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+form {
+  font-size: 17px;
+  float: left;
+  width: 80%;
+}
+
+input {
+  width: 80%;
+  padding-right: 40px;
+  background: rgb(218, 227, 236);
+}
+
+button {
+  float: right;
+  width: 20%;
+padding: 5px;
+  background: rgb(247, 248, 206);
+  color: black;
+  font-size: 1rem;
+  border-left: none;
+  cursor: pointer;
+}
+
+.social-stats {
 
 }
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
+.social-img {
+  height: 100%;
+}
+.main {
+  color: black;
 }
 
-footer {
+/* ABOUTT US */
 
+.about-us {
+  display: flex;
+  padding: 100px;
+  font-size: 1.6rem;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.about-img {
+  width: 100%;
+}
+
+.about-us-text {
+  padding-left: 30px;
+  flex-basis: 45%;
+}
+
+.subtitle {
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.topic {
+  font-family: "Cormorant SC", serif;
+  color: black;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.about-us-description {
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+.menu-btn {
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+}
+
+.menu-btn span {
+  background: rgb(212, 216, 94);
+}
+
+/* SPECIALITY CUISINE */
+.speciality-cuisine {
+  text-align: center;
+  background: rgb(233, 241, 250);
+}
+
+.speciality-cuisine > .subtitle {
+  padding-top: 40px;
+}
+
+.cuisine-nav a {
+  color: rgb(77, 74, 74);
+  padding: 40px;
+  border-bottom: 3px solid rgb(77, 74, 74);
+  transition: all 0.4s ease;
+}
+
+.cuisine-nav a:hover {
+  border-bottom: 3px solid orange;
+  color: orange;
+}
+
+.cuisine-menu {
+  display: flex;
+  padding: 60px;
+}
+
+.cuisine-menu section {
+  height: 200px;
+  width: 600px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 70%;
+  max-width: 140rem;
+  margin: auto;
+  padding: 1.5rem;
+  margin-top: 50px;
+}
+
+.image-container {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-4"
+    "img-5 img-6 img-7 img-8";
+}
+
+.image-container a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.img-1 {
+  grid-area: img-1;
+  background-image: url("../assets/images/620e970de2b89.jpg");
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url("../assets/images/image-6.jpeg");
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url("../assets/images/korean-9.jpeg");
+}
+.img-4 {
+  grid-area: img-4;
+  background-image: url("../assets/images/Citrus-Salad-On-Vesper-Food-Photography-Backdrop.jpeg");
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url("../assets/images/korean-5.webp");
+}
+.img-6 {
+  grid-area: img-6;
+  background-image: url("../assets/images/korean-10.jpeg");
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url("../assets/images/korean-11.jpeg");
+}
+.img-8 {
+  grid-area: img-8;
+  background-image: url("../assets/images/korean-13.jpg");
+}
+
+/* BOOK TABLE */
+
+.book-table {
+  margin-top: 50px;
+  text-align: center;
+
+}
+.phone-img {
+  border: 3px solid orange;
+  padding: 10px;
+  border-radius: 50%;
+}
+.contact h4 {
+  font-size: 2rem;
+}
+.contact p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: orange;
+}
+
+.opening-times {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.opening-times h4 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+.opening-times p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contact-img {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.testimonials {
+  margin: 50px 0 0 0;
+    text-align: center;
+}
+.testimonials-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.post-1 h4 {
+font-size: 1.8rem;
+font-weight: 500;
+margin: 10px 0;
+}
+
+.post-1 h5 {
+  color: gray;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.rating-img {
+  width: 100px;
+}
+
+.post-1 > .about-us-description {
+  padding: 0 100px;
+  font-size: 1.9rem;
+  line-height: 50px;
+  font-style: italic;
+}
