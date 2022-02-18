@@ -3,20 +3,6 @@
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-.clear {
-  clear: both;
-}
-
 /* GLOBAL */
 html {
   font-size: 62.5%;
@@ -35,6 +21,7 @@ body {
   height: auto;
   padding: 20px;
 }
+
 .nav-area {
   margin-right: 40px;
 }
@@ -43,7 +30,7 @@ body {
   display: inline;
   margin: auto 0;
   font-size: 2rem;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .nav-area a {
@@ -78,11 +65,12 @@ body {
   margin: 0 auto;
   left: 20px;
   right: 100%;
-  top: 48%; /* Adjust this value to move the positioned div up and down */
+  top: 48%;
   text-align: left;
   width: 50%;
   padding-right: 100px;
 }
+
 /* MAIN */
 
 .main-heading {
@@ -98,8 +86,7 @@ body {
 
 form {
   font-size: 17px;
-  float: left;
-  width: 80%;
+  width: 50%;
 }
 
 input {
@@ -111,7 +98,7 @@ input {
 button {
   float: right;
   width: 20%;
-padding: 5px;
+  padding: 5px;
   background: rgb(247, 248, 206);
   color: black;
   font-size: 1rem;
@@ -120,12 +107,23 @@ padding: 5px;
 }
 
 .social-stats {
-
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: left;
+  align-items: center;
+  width: 70%;
 }
 
-.social-img {
-  height: 100%;
+.social-stats img {
+  width: 35px;
+  margin-right: 10px;
 }
+
+.social-stats h3 {
+  margin-right: 30px;
+  font-size: 1.4rem;
+}
+
 .main {
   color: black;
 }
@@ -170,10 +168,6 @@ padding: 5px;
   text-transform: uppercase;
   color: black;
   font-size: 2rem;
-}
-
-.menu-btn span {
-  background: rgb(212, 216, 94);
 }
 
 /* SPECIALITY CUISINE */
@@ -281,7 +275,6 @@ padding: 5px;
 .book-table {
   margin-top: 50px;
   text-align: center;
-
 }
 .phone-img {
   border: 3px solid orange;
@@ -320,7 +313,7 @@ padding: 5px;
 
 .testimonials {
   margin: 50px 0 0 0;
-    text-align: center;
+  text-align: center;
 }
 .testimonials-img {
   height: 100px;
@@ -328,9 +321,9 @@ padding: 5px;
 }
 
 .post-1 h4 {
-font-size: 1.8rem;
-font-weight: 500;
-margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 .post-1 h5 {
