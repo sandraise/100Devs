@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre&family=Nanum+Myeongjo:wght@400;700&family=Roboto:wght@300;500&display=swap");
+
+:root {
+  --black: #2b2d42;
+  --grey: #8d99ae;
+  --lightgrey: #d6d3d3;
+  --white: #edf2f4;
+  --brightred: #ef233c;
+  --darked: #d90429;
+  font-size: 62.5%;
+}
+
+/* GLOBAL */
+body {
+  background: var(--white);
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  /* font-family: "David Libre", serif; */ /* 400 */
+  /* font-family: "Nanum Myeongjo", serif; */ /* 400, 700 */
+}
+
+hr {
+  margin: 30px 0;
+}
+
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* outline: 2px solid red; */
+}
+
+.main-header * {
+  margin: auto 0;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--black);
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s none;
+  font-size: 1.8rem;
+}
+
+.nav-links:hover {
+  /* color:var(--grey); */
+  border-bottom: 2px solid var(--grey);
+  cursor: pointer;
+}
+
+.nav-links:active,
+.nav-links:visited,
+.nav-links:link {
+  color: var(--black);
+}
+
+.nav-links:focus {
+  background: var(--lightgrey);
+}
+
+.main-header > .nav-area {
+  margin-right: 10px;
+}
+
+/* MAIN */
+
+#homepage-banner {
+  margin: 30px;
+}
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.main-text {
+  text-align: center;
+}
+
+/* main,
+#about-us,
+#our-solutions,
+#contact-us {
+  margin: 0 30px;
+} */
+
+#main-title,
+.subheading {
+  text-transform: uppercase;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.subheading {
+  color: rgb(184, 58, 58);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#main-title {
+  font-size: 4.5rem;
+  margin: 10px 30px;
+}
+
+.desc {
+  line-height: 25px;
+}
+
+.about-us-panel-desc {
+  margin: 0 10px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.emphasis {
+  font-weight: 500;
+  color: var(--darked);
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+  margin: 0 30px;
+  text-align: center;
+}
+
+#about-us,
+#our-solutions {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 20px;
+}
+
+.panel-heading {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.panel-image {
+  display: flex;
+  margin: 10px auto;
+}
