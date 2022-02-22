@@ -25,9 +25,3 @@ Do: Practice Typing - https://www.keybr.com/
 
 Due Tuesday - Jan. 25th:
 Finish: Labs From Class-03 - BBC, Khan Academy, Tech Crunch (JUST HTML)
-
-⭐ Office Hours Sunday - 1pm ET ⭐ 
-
-⭐ Next Class Tuesday - 6:30pm ET ⭐ 
-
-Also, the files you’ll need for class / homework are attached! Don't forget to unzip the folder!

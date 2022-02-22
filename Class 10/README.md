@@ -14,9 +14,3 @@ Do: The Level Ground, Source, Restaurant, Hair Salon Layouts in the homework-lay
 Watch: Independence Day
 Watch: https://youtu.be/hdI2bqOjy3c
 Push?: Do Pushwork Homepage and add media queries to other layouts
-
-NO OFFICIAL OFFICE HOURS SUNDAY (Super Bowl Sunday)
-
-Next Class Tuesday - 6:30pm ET
-
-Also, the files you’ll need for class / homework are attached! Don't forget to unzip the folder!

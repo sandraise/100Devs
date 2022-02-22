@@ -24,5 +24,3 @@ Do: Make 15 minutes of pain responsive
 Read: http://learnlayout.com/
 Read: https://learn.shayhowe.com/advanced-html-css/
 Do: Practice Typing - https://www.keybr.com/
-
-Nothing due Tuesday specifically of next week
