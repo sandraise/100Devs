@@ -13,40 +13,29 @@ alert(newAge);
 // *Functions*
 // Create a function that subtracts 4 numbers and alerts the difference
 
-let num1 = 50;
-let num2 = 21;
-let num3 = 3;
-let num4 = 5;
+subtractFunc(54, 24, 9, 4);
 
-subtractFunc();
-
-function subtractFunc() {
+function subtractFunc(num1, num2, num3, num4) {
   let difference = num1 - num2 - num3 - num4;
   alert(difference);
 }
 
 // Create a function that divides one number by another and returns the remainder
 
-let number1 = 200;
-let number2 = 7;
+remainderFunc(600, 13);
 
-remainderFunc();
-
-function remainderFunc() {
-  let remainder = 200 % 7;
+function remainderFunc(number1, number2) {
+  let remainder = number1 % number2;
   alert(remainder);
 }
 
 // *Conditionals*
 // Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
 
-let first = 20;
-let second = 25;
-let sum = first + second;
+jumanjiOrNot(50, 12);
 
-jumanjiOrNot();
-
-function jumanjiOrNot() {
+function jumanjiOrNot(first, second) {
+  sum = first + second;
   if (sum > 50) {
     alert("Jumanji");
   } else {
@@ -56,14 +45,10 @@ function jumanjiOrNot() {
 
 // Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
 
-let one = 23;
-let two = 25;
-let three = 74;
-let product = one * two * three;
+zebraOrNot(3, 7, 12);
 
-zebraOrNot();
-
-function zebraOrNot() {
+function zebraOrNot(one, two, three) {
+  product = one * two * three;
   if (product % 3 == 0) {
     alert("ZEBRA");
   } else {
