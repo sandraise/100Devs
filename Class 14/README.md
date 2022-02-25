@@ -3,7 +3,7 @@
 Here are the slides if you would like to follow along live: https://slides.com/d/xOTVtLE/live
 
 And here is the regular deck: https://slides.com/leonnoel/100devs2-javascript-more-basics-again
-
+ 
 Try and read before class (motivation): http://poemsspeak.blogspot.com/2016/12/poetry-speaks.html
 
 Our last class can be found here: https://www.twitch.tv/videos/1306965130
