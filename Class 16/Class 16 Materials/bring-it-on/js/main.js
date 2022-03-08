@@ -7,7 +7,7 @@ console.log(alphabet);
 // Create a variable, add 10 to it, and alert the value
 
 let age = 40;
-alert(age + 10);
+alert(age+=10);
 
 // *Functions*
 // Create a function that subtracts 4 numbers and alerts the difference

@@ -40,21 +40,18 @@ conditionalOne(27, 30, 3);
 
 // Create a function that takes in a day of the week. If it is a weekend alert, "weekend" and if not alert "week day". Handle capitilization and if the user does not enter a day of the week alert "Try again!"
 
-function conditionalTwo() {
-  let day = "monday";
+function conditionalTwo(day) {
+  const dayOfWeekLower = day.toLowerCase();
 
   if (
-    day.toLowerCase() === "monday" ||
-    day.toLowerCase() === "tuesday" ||
-    day.toLowerCase() === "wednesday" ||
-    day.toLowerCase() === "thursday" ||
-    day.toLowerCase() === "friday"
+    dayOfWeekLower === "monday" ||
+    dayOfWeekLower === "tuesday" ||
+    dayOfWeekLower === "wednesday" ||
+    dayOfWeekLower === "thursday" ||
+    dayOfWeekLower === "friday"
   ) {
     alert("week day!!");
-  } else if (
-    day.toLowerCase() === "saturday" ||
-    day.toLowerCase() === "sunday"
-  ) {
+  } else if (dayOfWeekLower === "saturday" || dayOfWeekLower === "sunday") {
     alert("weekend!!");
   } else {
     alert("Try again!");
