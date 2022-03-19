@@ -92,8 +92,8 @@ function pow(x, n) {
   return result;
 }
 
-let x = prompt("x?", "");
-let n = prompt("n?", "");
+let xNum = prompt("x?", "");
+let nNum = prompt("n?", "");
 
 function pow(x, n) {
   let result = x;

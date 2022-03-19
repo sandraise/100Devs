@@ -429,8 +429,12 @@ if (
 // Following second
 
 /*
+
 Write a program that asks for a time under the form of three information (hours, minutes, seconds). The program calculates and shows the time one second after. Incorrect inputs must be taken into account.
+
 */
+
+
 
 // Repeat statements
 // https://github.com/thejsway/thejsway/blob/master/manuscript/chapter04.md
@@ -465,7 +469,46 @@ for (let i = 1; i <= userNumInput; i++) {
 
 // Input validation
 
-let userNumber = "";
-while (userNumber >= 100) {
-  userNumber = prompt("Enter a number");
+let userNum = 0;
+while (userNum <= 100) {
+  userNum = prompt("Enter a number");
+}
+
+lessthan100();
+function lessthan100() {
+  let userInput = prompt("Enter a number over 100: ", "");
+  userInput < 100 ? lessthan100() : alert(`You typed in.. ${userInput}`);
+}
+
+// Multiplication table
+
+multiplicationTable();
+
+function multiplicationTable() {
+  let userEnter = prompt("Enter a number: ", "");
+  if (userEnter > 2 && userEnter < 9)
+    for (let i = 1; i <= 12; i++) {
+      console.log(`${userEnter} * ${i} =`, userEnter * i);
+    }
+  else alert(`Please enter a number between 2 and 9!`);
+}
+
+// Neither yes nor no
+
+let userYN = "";
+while (userYN.toLowerCase() !== "no" && userYN.toLowerCase() !== "yes") {
+  userYN = prompt("Type something other than Yes or No: ");
+}
+
+// FizzBuzz
+
+fizzBuzz();
+
+function fizzBuzz() {
+  for (i = 1; i < 101; i++) {
+    if (i % 15 === 0) console.log(`FizzBuzz ${i}`);
+    else if (i % 3 === 0) console.log(`Fizz ${i}`);
+    else if (i % 5 === 0) console.log(`Buzz ${i}`);
+    else console.log(i);
+  }
 }
