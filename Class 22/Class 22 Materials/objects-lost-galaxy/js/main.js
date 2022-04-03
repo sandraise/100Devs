@@ -21,11 +21,9 @@ mouse.mouseDetails = function () {
     `The age of the mouse is ${mouse.age}\n The name of the mouse is ${mouse.name}\n The color of the mouse is ${mouse.age}`
   );
 };
-
-mouse.age();
+mouse.mouseDetails();
 
 mouse.color = function () {
-  console.log(`The mouse's name is ${mouse.color}`);
+  console.log(`The mouse's name is ${mouse.name}`);
 };
-
 mouse.color();

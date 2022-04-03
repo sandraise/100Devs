@@ -542,3 +542,91 @@ function fizzBuzz() {
     else console.log(i);
   }
 }
+
+// Repeat statements
+// https://github.com/thejsway/thejsway/blob/master/manuscript/chapter05.md
+
+// Improved Hello
+
+firstName = prompt("Enter your first name: ");
+lastName = prompt("Enter your last name: ");
+
+function sayHello(firstName, lastName) {
+  const message = `Hello, ${firstName} ${lastName}!`;
+  return message;
+}
+
+sayHello(firstName, lastName);
+
+// Number squaring
+
+// Square the given number x
+function square1(x) {
+  return x * x;
+}
+
+// Square the given number x
+const square2 = (x) => {
+  return Math.pow(x, 2);
+};
+
+console.log(square1(0)); // Must show 0
+console.log(square1(2)); // Must show 4
+console.log(square1(5)); // Must show 25
+
+console.log(square2(0)); // Must show 0
+console.log(square2(2)); // Must show 4
+console.log(square2(5)); // Must show 25
+
+// When it's done, update the program so that it shows the square of every number between 0 and 10.
+for (let i = 0; i <= 10; i++) {
+  console.log(Math.pow(i, 2));
+}
+
+// Minimum of two numbers
+
+function min(a, b) {
+  if (a > b) {
+    console.log(b);
+  } else console.log(a);
+}
+console.log(min(4.5, 5)); // Must show 4.5
+console.log(min(19, 9)); // Must show 9
+console.log(min(1, 1)); // Must show 1
+
+const mini = (a, b) => (a > b ? console.log(b) : console.log(a));
+
+console.log(mini(4.5, 5)); // Must show 4.5
+console.log(mini(19, 9)); // Must show 9
+console.log(mini(1, 1)); // Must show 1
+
+// Calculator
+
+function calculate(a, operation, b) {
+  if (operation === "+") {
+    return a + b;
+  } else if (operation === "-") {
+    return a - b;
+  } else if (operation === "*") {
+    return a * b;
+  } else return a / b;
+}
+
+console.log(calculate(4, "+", 6)); // Must show 10
+console.log(calculate(4, "-", 6)); // Must show -2
+console.log(calculate(2, "*", 0)); // Must show 0
+console.log(calculate(12, "/", 0)); // Must show Infinity
+
+// Circumference and area of a circle
+
+const circumferenceCalc = (radius) => {
+  return Math.PI * (radius + radius);
+};
+
+circumferenceCalc(4);
+
+const areaCalculation = (radius) => {
+  return Math.PI * radius ** 2;
+};
+
+areaCalculation(3);
